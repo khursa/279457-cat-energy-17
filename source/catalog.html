@@ -2,16 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <noscript>
-      <p>
-        Ваш браузер не поддерживает работу со скриптами или их поддержка отключена!
-      </p>
-    </noscript>
     <div class="main-wrap">
       <!-- HEADER -->
       <header class="main-header">
@@ -71,411 +64,385 @@
         <h1 class="catalog__title">
           Каталог продукции
         </h1>
-        <div class="catalog__product product">
-          <div class="product__pro">
-          <div class="product__pro--chicken">
-            <section class="product__card card">
-              <div class="card__wrap">
-                <div class="card__wrap--img">
-                  <img
-                    class="card__img"
-                    src="http://placehold.it/140x144"
-                    srcset="img/logo/logo-mobile-header-2x.png 2x,
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
                     img/logo/logo-mobile-header-3x.png 3x"
-                    width="140"
-                    height="144"
-                    alt="Изображение продукта"
-                  >
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy PRO 500 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    500 г
+                  </span>
                 </div>
-                <div class="card__wrap--info">
-                  <h3 class="card__title">
-                    Cat Energy PRO 500 г
-                  </h3>
-                  <div class="card__description">
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                      <span class="card__value">
-                          500 г
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                      <span class="card__value">
-                          Курица
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                      <span class="card__value">
-                          700 Р.
-                        </span>
-                    </p>
-                  </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Курица
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    700 Р.
+                  </span>
                 </div>
               </div>
-              <button
-                class="card__button"
-                aria-label="Заказать продукт"
-              >
-                Заказать
-              </button>
-            </section>
-            <section class="product__card card">
-              <div class="card__wrap">
-                <div class="card__wrap--img">
-                  <img
-                    class="card__img"
-                    src="http://placehold.it/140x144"
-                    srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                    width="140"
-                    height="144"
-                    alt="Изображение продукта"
-                  >
-                </div>
-                <div class="card__wrap--info">
-                  <h3 class="card__title">
-                    Cat Energy PRO 1000 г
-                  </h3>
-                  <div class="card__description">
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                      <span class="card__value">
-                          1000 г
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                      <span class="card__value">
-                          Курица
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                      <span class="card__value">
-                          1000 Р.
-                        </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="card__button"
-                aria-label="Заказать продукт"
-              >
-                Заказать
-              </button>
-            </section>
-          </div>
-          <div class="product__pro--fish">
-            <section class="product__card card">
-              <div class="card__wrap">
-                <div class="card__wrap--img">
-                  <img
-                    class="card__img"
-                    src="http://placehold.it/140x144"
-                    srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                    width="140"
-                    height="144"
-                    alt="Изображение продукта"
-                  >
-                </div>
-                <div class="card__wrap--info">
-                  <h3 class="card__title">
-                    Cat Energy PRO 500 г
-                  </h3>
-                  <div class="card__description">
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                      <span class="card__value">
-                          500 г
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                      <span class="card__value">
-                          Рыба
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                      <span class="card__value">
-                          700 Р.
-                        </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="card__button"
-                aria-label="Заказать продукт"
-              >
-                Заказать
-              </button>
-            </section>
-            <section class="product__card card">
-              <div class="card__wrap">
-                <div class="card__wrap--img">
-                  <img
-                    class="card__img"
-                    src="http://placehold.it/140x144"
-                    srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                    width="140"
-                    height="144"
-                    alt="Изображение продукта"
-                  >
-                </div>
-                <div class="card__wrap--info">
-                  <h3 class="card__title">
-                    Cat Energy PRO 1000 г
-                  </h3>
-                  <div class="card__description">
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                      <span class="card__value">
-                          1000 г
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                      <span class="card__value">
-                          Рыба
-                        </span>
-                    </p>
-                    <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                      <span class="card__value">
-                          1000 Р.
-                        </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="card__button"
-                aria-label="Заказать продукт"
-              >
-                Заказать
-              </button>
-            </section>
-          </div>
-        </div>
-          <div class="product__slim">
-            <div class="product__slim--buckwheat">
-              <section class="product__card card">
-                <div class="card__wrap">
-                  <div class="card__wrap--img">
-                    <img
-                      class="card__img"
-                      src="http://placehold.it/140x144"
-                      srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                      width="140"
-                      height="144"
-                      alt="Изображение продукта"
-                    >
-                  </div>
-                  <div class="card__wrap--info">
-                    <h3 class="card__title">
-                      Cat Energy Slim 500 г
-                    </h3>
-                    <div class="card__description">
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                        <span class="card__value">
-                          500 г
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                        <span class="card__value">
-                          Гречка
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                        <span class="card__value">
-                          400 Р.
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="card__button"
-                  aria-label="Заказать продукт"
-                >
-                  Заказать
-                </button>
-              </section>
-              <section class="product__card card">
-                <div class="card__wrap">
-                  <div class="card__wrap--img">
-                    <img
-                      class="card__img"
-                      src="http://placehold.it/140x144"
-                      srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                      width="140"
-                      height="144"
-                      alt="Изображение продукта"
-                    >
-                  </div>
-                  <div class="card__wrap--info">
-                    <h3 class="card__title">
-                      Cat Energy Slim 1000 г
-                    </h3>
-                    <div class="card__description">
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                        <span class="card__value">
-                          1000 г
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                        <span class="card__value">
-                          Гречка
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                        <span class="card__value">
-                          700 Р.
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="card__button"
-                  aria-label="Заказать продукт"
-                >
-                  Заказать
-                </button>
-              </section>
-            </div>
-            <div class="product__slim--rice">
-              <section class="product__card card">
-                <div class="card__wrap">
-                  <div class="card__wrap--img">
-                    <img
-                      class="card__img"
-                      src="http://placehold.it/140x144"
-                      srcset="img/logo/logo-mobile-header-2x.png 2x,
-                    img/logo/logo-mobile-header-3x.png 3x"
-                      width="140"
-                      height="144"
-                      alt="Изображение продукта"
-                    >
-                  </div>
-                  <div class="card__wrap--info">
-                    <h3 class="card__title">
-                      Cat Energy Slim 500 г
-                    </h3>
-                    <div class="card__description">
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Объем
-                        </span>
-                        <span class="card__value">
-                          500 г
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Вкус
-                        </span>
-                        <span class="card__value">
-                          Рис
-                        </span>
-                      </p>
-                      <p class="card__feature">
-                        <span class="card__property">
-                          Цена
-                        </span>
-                        <span class="card__value">
-                          500 Р.
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="card__button"
-                  aria-label="Заказать продукт"
-                >
-                  Заказать
-                </button>
-              </section>
-              <section class="product__card card yet">
-               <div class="card__wrap">
-                 <div class="yet__plus">
-                   <img
-                     class="yet__img"
-                     src="img/plus-mobile.svg"
-                     width="31"
-                     height="31"
-                     alt="Иконка плюса"
-                   >
-                 </div>
-                 <div class="yet__info">
-                   <h3 class="yet__title">
-                     Показать еще 100500 товаров
-                   </h3>
-                   <p class="yet__text">
-                     На самом деле вкусов гораздо больше!
-                   </p>
-                   <button
-                     class="yet__button"
-                     aria-label="Показать еще продукты Cat Energy"
-                   >
-                     Показать все
-                   </button>
-                 </div>
-               </div>
-              </section>
             </div>
           </div>
-        </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy PRO 1000 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    1000 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Курица
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    1000 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy PRO 500 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    500 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Рыба
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    700 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy PRO 1000 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    1000 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Рыба
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    1000 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy Slim 500 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    500 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Гречка
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    400 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy Slim 1000 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    1000 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Гречка
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    700 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card__info">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="140"
+              height="144"
+              alt="Изображение продукта"
+            >
+            <div class="card__spec">
+              <h2 class="card__spec--title">
+                Cat Energy Slim 500 г
+              </h2>
+              <div class="card__spec--details">
+                <div>
+                  <span>
+                    Объем
+                  </span>
+                  <span>
+                    500 г
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Вкус
+                  </span>
+                  <span>
+                    Рис
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Цена
+                  </span>
+                  <span>
+                    500 Р.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__order">
+            <button
+              aria-label="Заказать продукт"
+            >
+              Заказать
+            </button>
+          </div>
+        </section>
+        <section class="card">
+            <img
+              class="card__img"
+              src="http://placehold.it/140x144"
+              srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+              width="31"
+              height="31"
+              alt=""
+            >
+          <h2 class="card__spec--title">
+            Показать еще 100500 товаров
+          </h2>
+          <p class="card__spec--details">
+            На самом деле вкусов гораздо больше!
+          </p>
+          <button
+            aria-label="Показать еще продукты"
+          >
+            Показать все
+          </button>
+        </section>
       </div>
       <!-- END CATALOG -->
 
