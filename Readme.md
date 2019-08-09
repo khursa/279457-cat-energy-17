@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Хурса](https://up.htmlacademy.ru/adaptive/17/user/279457).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Башилов] (https://htmlacademy.ru/profile/id167603).
 
 ---
 
