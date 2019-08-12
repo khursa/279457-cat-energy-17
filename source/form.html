@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <div class="main-wrap">
+      <!-- HEADER -->
+      <header class="main-header">
+        <a
+          class="main-logo"
+          href="index.html"
+          aria-label="Перейти главную страницу веб-сайта"
+        >
+          <img
+            class="main-logo__image"
+            src="img/logo/logo-mobile-header.png"
+            srcset="img/logo/logo-mobile-header-2x.png 2x,
+                    img/logo/logo-mobile-header-3x.png 3x"
+            width="320"
+            height="65"
+            alt="Логотип"
+          >
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a
+                class="main-navigation__link"
+                href="index.html"
+                aria-label="Перейти на главную страницу веб-сайта"
+              >
+                Главная
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a
+                class="main-navigation__link"
+                href="catalog.html"
+                aria-label="Переход на страницу каталога продукции"
+              >
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <span class="main-navigation__link">
+                Подбор программы
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <!-- END NAVIGATION -->
+      </header>
+      <!-- END HEADER -->
+
+      <!-- FORM -->
+      <div class="form-wrap">
+        <h1 class="program-selection__title">
+          Подбор программы
+        </h1>
+        <h2 class="visually-hidden">
+          Анкета кота
+        </h2>
+        <form
+          class="form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <fieldset class="profile">
+            <legend class="legend--profile">
+              Заполните анкету и мы подберем программу питания для вашего кота
+            </legend>
+            <div class="profile__info">
+              <div class="profile__name">
+                <label
+                  class="label"
+                  for="cat-name">
+                  Имя:*
+                </label>
+                <input
+                  class="profile__input-text"
+                  id="cat-name"
+                  type="text"
+                  name="cat-name"
+                  pattern="/(\w|\s|[\.\'-])+/"
+                  placeholder="Барсик"
+                  maxlength="20"
+                  minlength="2"
+                  aria-label="Поле для ввода имени кота"
+                  required
+                >
+              </div>
+              <div class="profile__weight">
+                <label
+                  class="label"
+                  for="cat-weight">
+                  Вес (кг):*
+                </label>
+                <input
+                  class="profile__input-text"
+                  id="cat-weight"
+                  type="text"
+                  name="cat-weight"
+                  pattern="^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^50$"
+                  placeholder="7"
+                  maxlength="2"
+                  minlength="1"
+                  aria-label="Поле для ввода веса кота"
+                  required
+                >
+              </div>
+              <div class="profile__age">
+                <label
+                  class="label"
+                  for="cat-age">
+                  Возраст (лет):
+                </label>
+                <input
+                  class="profile__input-text"
+                  id="cat-age"
+                  type="text"
+                  name="cat-age"
+                  pattern="^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^50$"
+                  placeholder="7"
+                  maxlength="2"
+                  minlength="1"
+                  aria-label="Поле для ввода возраста кота"
+                >
+              </div>
+            </div>
+            <div class="profile__program">
+              <label
+                class="label"
+                for="slimming-program"
+              >
+                <input
+                  type="radio"
+                  name="program"
+                  id="slimming-program"
+                  value="slimming"
+                  aria-label="Выбрать програму для похудения кота"
+                  checked
+                >
+                <span class="profile__program-name">
+                  Похудение
+                </span>
+              </label>
+              <label
+                class="label"
+                for="mass-gain-program"
+              >
+                <input
+                  type="radio"
+                  name="program"
+                  id="mass-gain-program"
+                  value="mass-gain"
+                  aria-label="Выбрать програму для набора массы кота"
+                >
+                <span class="profile__program-name">
+                  Набор массы
+                </span>
+              </label>
+              <label
+                class="label"
+                for="help-choose-program"
+              >
+                <input
+                  type="radio"
+                  name="program"
+                  id="help-choose-program"
+                  value="help-choose"
+                  aria-label="Обратиться за помощью в выборе программы для кота"
+                >
+                <span class="profile__program-name">
+                  Не знаю (Нужен ваш совет)
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="contact">
+            <legend class="legend">
+              Контактные данные (владельца кота)
+            </legend>
+            <div class="contact__email">
+              <label
+                class="label"
+                for="user-email">
+                E-mail:*
+              </label>
+              <input
+                class="profile__input-text"
+                id="user-email"
+                type="email"
+                name="email"
+                pattern="^\w[\w!#$%&'*+\-/=?^_`{|}~]+\.?[\w!#$%&'*+\-/=?^_`{|}~]+@\w{1,12}\.[A-z]{2,3}$"
+                placeholder="kuklachev@gmail.com"
+                maxlength="1000"
+                minlength="3"
+                aria-label="Поле для ввода email владельца кота"
+                required
+              >
+            </div>
+            <div class="contact__tel">
+              <label
+                class="label"
+                for="user-tel">
+                Телефон:*
+              </label>
+              <input
+                class="profile__input-text"
+                id="user-tel"
+                type="tel"
+                name="tel"
+                pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
+                placeholder="8 (960) 900-60-90"
+                maxlength="15"
+                minlength="10"
+                aria-label="Поле для ввода номера телефона владельца кота"
+                required
+              >
+            </div>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="legend">
+              Комментарий
+            </legend>
+            <textarea
+              class="textarea"
+              name="comment"
+              placeholder="Расскажите обо всех повадках кота"
+              minlength="1"
+              maxlength="1000000"
+              rows="5"
+              aria-label="Поле для ввода комментария"
+            ></textarea>
+          </fieldset>
+          <fieldset class="additionally">
+            <legend class="legend">
+              Дополнительно
+            </legend>
+            <div class="additionally__checkbox-wrap">
+              <label
+                class="label"
+                for="sweetener"
+              >
+                <input
+                  id="sweetener"
+                  type="checkbox"
+                  name="sweetener"
+                  aria-label="Добавить сахарозаменитель в программу"
+                  checked
+                >
+                <span class="additionally__product-name">
+                  Сахарозаменитель
+                </span>
+              </label>
+              <label
+                class="label"
+                for="water"
+              >
+                <input
+                  id="water"
+                  type="checkbox"
+                  name="water"
+                  aria-label="Добавить питьевую воду в программу"
+                >
+                <span class="additionally__product-name">
+                  Питьевая вода
+                </span>
+              </label>
+              <label
+                class="label"
+                for="milk"
+              >
+                <input
+                  id="milk"
+                  type="checkbox"
+                  name="milk"
+                  aria-label="Добавить молоко в программу"
+                >
+                <span class="additionally__product-name">
+                  Молоко
+                </span>
+              </label>
+              <label
+                class="label"
+                for="vitamins"
+              >
+                <input
+                  id="vitamins"
+                  type="checkbox"
+                  name="vitamins"
+                  aria-label="Добавить витамины в программу"
+                >
+                <span class="additionally__product-name">
+                  Витамины
+                </span>
+              </label>
+            </div>
+            <div class="additionally__button-wrap">
+              <button
+                class="form__button"
+                aria-label="Отправить форму подбора программы"
+              >
+                Отправить заявку
+              </button>
+              <span class="required-input">
+                * — Обязательные поля
+              </span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- END FORM -->
+
+      <!-- COOPERATION -->
+      <div class="cooperation">
+        <h2 class="visually-hidden">
+          Сотрудничество
+        </h2>
+        <div class="cooperation__info">
+          <h3 class="cooperation__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h3>
+          <span class="cooperation__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </span>
+        </div>
+      </div>
+      <!-- END COOPERATION -->
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="main-footer__logo">
+          <a
+            class="main-footer__link"
+            href="index.html"
+            aria-label="Обновить главную страницу веб-сайта"
+          >
+            <img
+              class="main-footer__image"
+              src="img/logo/footer-logo.svg"
+              width="128"
+              height="24"
+              alt="Логотип"
+            >
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li  class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/"
+                aria-label="Перейти на страницу Кэт энерджи Вконтакте"
+                target="_blank"
+              >
+                Вконтакте
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--instagram"
+                href="https://www.instagram.com/"
+                aria-label="Перейти на страницу Кэт энерджи в Инстаграм"
+                target="_blank"
+              >
+                Инстаграм
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href="https://www.facebook.com/"
+                aria-label="Перейти на страницу Кэт энерджи на Фейсбук"
+                target="_blank"
+              >
+                Фейсбук
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a
+            class="copyright__text"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Перейти на страницу разработчика"
+            target="_blank"
+          >
+            HTML Academy
+          </a>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Перейти на страницу разработчика"
+            target="_blank"
+          >
+            <img
+              class="copyright__logo"
+              src="img/logo/htmlacademy.png"
+              srcset="img/logo/htmlacademy-2x.png 2x,
+                    img/logo/htmlacademy-3x.png 3x"
+              width="27"
+              height="34"
+              alt="Логотип HTML Academy"
+            >
+          </a>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
