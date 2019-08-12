@@ -1,0 +1,29 @@
+.slide-switch {
+  position: relative;
+  width: 311px;
+  min-height: 232px;
+  overflow: hidden;
+}
+
+.slide-fat,
+.slide-thin {
+  position: absolute;
+  transition: transform 0.4s ease-out;
+}
+
+.slide-fat {
+  transform: translateX(-311px);
+}
+
+.slide-thin {
+  transform: translateX(311px);
+}
+
+.slide-button--after {
+  right: 100px;
+}
+
+.before:checked ~ #slide-fat,
+.after:checked ~ #slide-thin {
+  transform: translateX(0);
+}
