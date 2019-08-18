@@ -4,22 +4,6 @@
   box-sizing: inherit;
 }
 
-@media (min-width: @tablet-width) {
-  .main-wrap {
-    width: 640px;
-    margin: 0 auto;
-    padding: 0 64px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-wrap {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 120px;
-  }
-}
-
 .body {
   box-sizing: border-box;
   min-width: 320px;
@@ -31,7 +15,10 @@
   font-family: "Oswald", Arial, sans-serif;
 }
 
-img {
+.main-logo__image,
+.main-footer__image,
+.copyright__logo,
+.main-banner__image {
   max-width: 100%;
   height: auto;
 }
@@ -65,3 +52,19 @@ ul {
   max-width: 320px;
   margin: 0 auto;
 }
+
+//@media (min-width: @tablet-width) {
+//  .main-wrap {
+//    width: 640px;
+//    margin: 0 auto;
+//    padding: 0 64px;
+//  }
+//}
+//
+//@media (min-width: @desktop-width) {
+//  .main-wrap {
+//    width: 960px;
+//    margin: 0 auto;
+//    padding: 0 120px;
+//  }
+//}
